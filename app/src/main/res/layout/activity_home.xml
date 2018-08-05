@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    android:id="@+id/home_activity_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="112dp"
+        android:layout_height="80dp"
+        android:src="@drawable/back_main"
+        android:id="@+id/logo_img"
+        android:layout_alignEnd="@id/cardview"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_logo_msg"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/logo_img"
+        android:elevation="0dp"
+        android:id="@+id/cardview"
+        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/colorBackground"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/image_progress"
+            android:visibility="gone"
+            android:background="@color/colorDarkBlue"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkBlue"
+            android:text="@string/change_picture_str"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/update_pic_button"
+            android:textSize="12sp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/profile_img"
+            android:id="@+id/profile_imgview"
+            />
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="26sp"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cardview"
+        android:text="@string/txt_download_str"
+        android:id="@+id/username_holder"
+        android:gravity="center"
+        android:background="@drawable/textview_round_bg"
+        />
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_holder"
+        android:id="@+id/msg_holder_cardview"
+        android:layout_centerHorizontal="true"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorETbg"
+        android:layout_margin="25dp"
+        app:cardElevation="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_message_holder"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:text="@string/txt_download_str"
+                android:id="@+id/user_mail_holder"
+                android:fontFamily="sans-serif"
+                android:includeFontPadding="true"
+                android:elegantTextHeight="true"
+                android:layout_gravity="center"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@color/colorPrimary"/>
+
+
+            <TextView
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="4dp"
+                android:text="@string/txt_download_str"
+                android:textSize="16sp"
+                android:id="@+id/user_contactHolder"
+                android:fontFamily="sans-serif"
+                android:includeFontPadding="true"
+                android:elegantTextHeight="true"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout_str"
+        android:background="@color/colorBackgroundDark"
+        android:layout_margin="10dp"
+        android:layout_below="@id/msg_holder_cardview"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/log_out_btn"
+        android:visibility="visible"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>

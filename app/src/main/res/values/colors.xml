@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#455d7a</color>
+    <color name="colorPrimaryDark">#233142</color>
+    <color name="colorAccent">#f95959</color>
+    <color name="colorAccent2">#facf5a</color>4
+    <color name="colorDarkBlue">#070068</color>
+    <!--<color name="colorPrimary">#c97628</color>-->
+    <!--<color name="colorPrimaryDark">#0916cc</color>-->
+    <!--<color name="colorAccent">#FFFFFFFF</color>-->
+    <color name="colorWhiteTransculent">#b0ffffff</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorActivityBackgroundLight">#c6c6c6</color>
+    <color name="colorActivityBackground">#475fb7</color>
+    <color name="colorETbg">#cdc0d2</color>
+    <color name="colorButtonBg">#ff5722</color>
+    <color name="colorBackground">#31970fd6</color>
+    <color name="colorBackgroundDark">#cb970fd6</color>
+    <color name="colorButtonBlue">#5944cf</color>
+</resources>

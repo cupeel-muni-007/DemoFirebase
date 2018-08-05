@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_activity_frame"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_gradient"
+    tools:context=".RegisterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="130dp"
+            android:src="@drawable/back_main"
+            android:id="@+id/logo_img_reg"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_logo_msg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_below="@id/logo_img_reg"
+            android:padding="20dp"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorETbg">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:id="@+id/name_edit_txt_reg"
+                    android:hint="@string/full_name_str"
+                    android:inputType="textAutoComplete" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorETbg">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:id="@+id/contact_edit_txt_reg"
+                    android:hint="@string/contact_no_str"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorETbg">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_edit_txt_reg"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="@string/email_str"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorETbg">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pass_edit_txt_reg"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="@string/password_str"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_str"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:background="@color/colorBackgroundDark"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btn_sign_up_reg"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_registered_msg"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:id="@+id/btn_login_reg"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reg_progress_layout">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_progress"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+</FrameLayout>

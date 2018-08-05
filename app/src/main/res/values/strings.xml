@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FirebaseDemo</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_registered_msg">Already have an account? <b><u>Login</u></b></string>
+    <string name="register_str">Register</string>
+    <string name="password_str">Password</string>
+    <string name="email_str">Email</string>
+    <string name="login_str">Login</string>
+    <string name="new_user_msg">Don\'t have an account? <b><u>Sign up</u></b></string>
+    <string name="full_name_str">Full Name</string>
+    <string name="contact_no_str">Contact No</string>
+    <string name="logout_str">Logout</string>
+    <string name="app_logo_msg">Logo of the app</string>
+    <string name="forgot_password_str"><u>Forgot Password?</u></string>
+    <string name="profile_img">Profile Picture Container</string>
+    <string name="change_str">Change</string>
+    <string name="change_picture_str"><b><u>Change Picture</u></b></string>
+    <string name="txt_download_str">Downloading Data...</string>
+</resources>
